@@ -306,13 +306,13 @@ h1 {
     }
 
     .div2-sec4 {
-        padding: 0px;
         flex-wrap: wrap;
+        justify-content: center;
 
     }
 
     .tarjetas-sec4 {
-        width: 50% !important;
+        width: 46%;
         
     }
 
