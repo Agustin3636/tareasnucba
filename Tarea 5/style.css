@@ -6,6 +6,7 @@
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
+
 div, section {
     overflow: hidden;
 }
@@ -38,6 +39,7 @@ h2 {
 }
 .logo img{
     width:70px;
+    min-width: 70px;
     height: auto;
     cursor: pointer;
 }
@@ -70,7 +72,7 @@ h2 {
 
 /* Seccion 1 */
 
-.seccion-1, .seccion-2, .seccion-3, .seccion-4{
+.seccion-1, .seccion-2, .seccion-3, .seccion-4, .seccion-5{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -80,10 +82,10 @@ h2 {
 .seccion-1 {
     background-color: #090910;
 }
-.seccion-2 {
+/*.seccion-2 {
     background-color: #541212;
-}
-.seccion-3, .seccion-4 {
+}*/
+.seccion-2, .seccion-3, .seccion-4, .seccion-6, .seccion-5 {
     background-color: #f1f1f1;
 }
 
@@ -163,7 +165,7 @@ h2 {
 .div-principal-sec2 p{
     max-width: 50%;
     text-align: center;
-    color: #f1f1f1;
+    color: #090910;
     font-weight: 400;
     font-size: 18px;
 }
@@ -190,9 +192,10 @@ h2 {
     flex-direction: row;
     align-items: center;
     padding: 4em 4em;
-    gap: 4em;
+    gap: 2em;
     margin-top: 1em;
 }
+
 .div2-sec4{
     gap: 2em;
 }
@@ -229,6 +232,15 @@ h2 {
     min-height: 6.4em;
 }
 
+.div1-sec3 p, .div1-sec4 p {
+    text-align: center;
+}
+
+.div2-sec3 {
+    display: flex;
+    flex-direction: row;
+}
+
 /* Seccion 4 */
 
 .circulo {
@@ -250,6 +262,165 @@ h1 {
     font-weight: bold;
 
 }
+
+.div1-sec5 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 0px 8em 0px;
+}
+
+.div1-sec5 p{
+    padding: 2em 0px 3em 0px;
+}
+
+.div-imgs-sec5 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    flex-wrap: wrap;
+}
+
+.div-imgs-sec5 img {
+    width: 10em;
+    min-width: 3.5em;
+}
+
+
+.seccion-6 {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    padding: 0em 0em 0em 8.8em;
+    align-items: stretch;
+    background-color: #F0A500;
+}
+
+.div1-sec6{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: animacion-txt 1.5s ease 0.5s 1 normal;
+    -moz-animation: animacion-txt 1.5s ease 0.5s 1 normal;
+    -webkit-animation: animacion-txt 1.5s ease 0.5s 1 normal;
+    -o-animation: animacion-txt 1.5s ease 0.5s 1 normal;
+}
+
+@keyframes  animacion-txt {
+    from {bottom: -1000px;}
+    to {bottom: 0px;}
+
+}
+
+.div1-sec6 h2{
+    width: 100%;
+}
+
+.info-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.divs-info {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    gap: 15px;
+    align-items: center;
+}
+.divs-info img, .div-redes img{
+    width: 32px;
+    height: 32px;
+}
+
+.div-redes{
+    display: flex;
+    flex-direction: row;
+    gap: 1.2em;
+    margin-top: 30px;
+    height: 50px;
+    align-items: center;
+}
+.div-redes a:nth-child(1){
+    position: relative;
+    animation: animacion-redes 1s ease-in-out 0.5s infinite alternate;
+    -moz-animation: animacion-redes 1s ease-in-out 0.5s infinite  alternate;
+    -webkit-animation: animacion-redes 1s ease-in-out 0.5s infinite  alternate;
+    -o-animation: animacion-redes 1s ease-in-out 0.5s infinite  alternate;
+}
+.div-redes a:nth-child(2){
+    position: relative;
+    animation: animacion-redes 1s ease-in-out 0.25s infinite alternate;
+    -moz-animation: animacion-redes 1s ease-in-out 0.25s infinite  alternate;
+    -webkit-animation: animacion-redes 1s ease-in-out 0.25s infinite  alternate;
+    -o-animation: animacion-redes 1s ease-in-out 0.25s infinite  alternate;
+}
+.div-redes a:nth-child(3){
+    position: relative;
+    animation: animacion-redes 1s ease-in-out 0.75s infinite alternate;
+    -moz-animation: animacion-redes 1s ease-in-out 0.75s infinite  alternate;
+    -webkit-animation: animacion-redes 1s ease-in-out 0.75s infinite  alternate;
+    -o-animation: animacion-redes 1s ease-in-out 0.75s infinite  alternate;
+}
+@keyframes  animacion-redes {
+    from {
+        transform: translate(0, -4px);
+    }
+    to {
+        transform: translate(0, 4px);
+    }
+}
+
+.tarjeta-contacto{
+    display: flex;
+    flex-direction: column;
+    width: 15em;
+    gap: 30px;
+    padding: 2em 1em;
+}
+.tarjeta-contacto p{
+    font-size: 14px;
+}
+
+.contacto1-sec5{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.div2-sec6 {
+    height: auto;
+    width: 100%;
+}
+
+.div2-sec6 img{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 680px;
+    margin-bottom: -10px;
+    animation: animacion-img 1.2s ease 0.5s 1 normal running;
+    -moz-animation: animacion-img 1.2s ease 0.5s 1 normal running;
+    -webkit-animation: animacion-img 1.2s ease 0.5s 1 normal running;
+    -o-animation: animacion-img 1.2s ease 0.5s 1 normal running;
+}
+
+@keyframes  animacion-img {
+    from {right: -2000px;}
+    to {right: 0px;}
+}
+
 
 @media(max-width:420px) {
     .btn-1, .btn-2{
@@ -316,6 +487,67 @@ h1 {
         
     }
 
+    .div2-sec3 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .tarjetas {
+        width: 45%;
+        min-width:15em;
+    }
+
+    .tarjetas-sec4 {
+        width: 45%;
+        min-width:15em;
+    }
+
+    .div-redes a:nth-child(1), .div-redes a:nth-child(2), .div-redes a:nth-child(3){
+        animation: none;
+    }
+
+    .seccion-6 {
+        flex-direction: column-reverse;
+        padding:2em 4em;
+    }
+
+    .seccion-5, .seccion-4, .seccion-3, .seccion-2, .seccion-1{
+        padding:2em 2em;   
+    }
+    .div2-sec6 img{
+        display: none;
+    }
+
+    .contacto1-sec5, .div-redes {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .div1-sec6 h1, .tarjeta-contacto h3, .seccion-5 h2, .seccion-5 p {
+        text-align: center;
+    }
+    .tarjeta-contacto h3 {
+        margin-left: 0px;
+    }
+
+    .header {
+        padding: 0 2em;
+    }
+    .lista {
+        gap: 1.5em;
+
+    }
+    .lista li{
+        font-size: 1.5em;
+        overflow: hidden;
+    }
+
+    .header a{
+        font-size: 14px;
+        width: auto;
+    }
+
+    
+
 }
 @media (max-width:768px){
     .titulo-hero {
@@ -334,5 +566,15 @@ h1 {
     }
     .img-logo-mob{
         width: 8em;
+    }
+    .seccion-2{
+        padding: 2em;
+    }
+
+}
+
+@media (max-width:816px){
+    .tarjetas, .tarjetas-sec4 {
+        width: 80%;
     }
 }
